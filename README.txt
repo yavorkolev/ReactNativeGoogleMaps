@@ -1,5 +1,5 @@
 # ReactNativeGoogleMaps Environment: Ubuntu - 18.04.1(Node-v14.8.0, react-native-cli: 2.0.1, npm-6.14.7, watchman-4.9.0, Java-1.8.0_131) + Android-10.0.0.232 
-Google Map example(MountainGuide)
+Google Map + Runtime Permissions Request example(MountainGuide)
 =====================================================
 1 - npx react-native-init MountainGuide // Create the project and go to the project folder
 -----------------------------------------------------
