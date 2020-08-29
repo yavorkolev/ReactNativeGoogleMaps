@@ -22,48 +22,9 @@ Google Map + Runtime Permissions Request example(MountainGuide)
             android:name="com.google.android.geo.API_KEY"
             android:value="Your Google Maps Api Key"/>
 -----------------------------------------------------
-5 - App.js //show GoogleMaps with dummy hardcoded coordinates:
-import React, { Component } from 'react';
-import {
-  StyleSheet,
-  View,
-} from 'react-native';
-
-import MapView, {PROVIDER_GOOGLE} from "react-native-maps";
-
-export default class App extends Component{
-  render(){
-    return (
-    <View style = {styles.container}>
-      <MapView 
-      provider = {PROVIDER_GOOGLE} 
-      style = {styles.map} 
-      initialRegion = {
-        {latitude: 37.78825, 
-        longitude: -122.4324,
-        latitudeDelta: 0.0922,
-        longitudeDelta: 0.0421,
-        }}>
-
-      </MapView>
-    </View>
-    )
-  }
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "red"
-  },
-  map: {
-    flex: 1
-  }
-});
+5 - Place in Android folder: "local.properties" with the path to the Android SDK, get from existing and working Android Studio project
 -----------------------------------------------------
-6 - Place in Android folder: "local.properties" with the path to the Android SDK, get from existing and working Android Studio project
+6 - react-native start
 -----------------------------------------------------
-7 - react-native start
------------------------------------------------------
-8 - react-native run-android
+7 - react-native run-android 
 =====================================================
